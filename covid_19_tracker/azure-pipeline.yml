@@ -1,4 +1,5 @@
 # Flutter build
+name: $(Date:yyyyMMdd)$(Minutes)
 variables:
   projectDirectory: 'covid_19_tracker'
 trigger:
@@ -11,7 +12,7 @@ jobs:
     - task: FlutterInstall@0
       inputs:
         channel: 'stable'
-        version: '2.5.30'
+        version: 'latest'
     
     - task: FlutterBuild@0
       inputs:
